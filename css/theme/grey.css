@@ -276,6 +276,9 @@ body {
     color: #fff;
     background: #134674;
     text-shadow: none; }
+  .reveal pre {
+    width: 80%;
+    word-break: break-word; }
   .reveal .tinted {
     background: rgba(0, 0, 0, 0.4);
     min-width: 100%;

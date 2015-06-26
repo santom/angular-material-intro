@@ -29,6 +29,7 @@ $pastelPurple: #ebedff;
 
 // Override theme settings (see ../template/settings.scss)
 $background: radial-gradient(#424f5a, #697a85);
+$secondaryBackground: radial-gradient(#4d7e65, #698376);
 
 // Primary/body text
 $mainFont: 'Open Sans', sans-serif;
@@ -68,6 +69,11 @@ body {
 		color: $selectionColor;
 		background: $selectionBackgroundColor;
 		text-shadow: none;
+	}
+
+	pre {
+		width: 80%;
+		word-break: break-word;
 	}
 
 	.tinted {
