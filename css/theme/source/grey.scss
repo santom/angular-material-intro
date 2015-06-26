@@ -20,6 +20,7 @@
 // ---------------------------------------------
 
 // Color palette
+$white: #ffffff;
 $pastelRed: #ffebeb;
 $pastelOrange: #fff7eb;
 $pastelYellow: #ffffeb;
@@ -27,7 +28,7 @@ $pastelGreen: #ecffeb;
 $pastelPurple: #ebedff;
 
 // Override theme settings (see ../template/settings.scss)
-$background: radial-gradient(#424F5A, #697A85);
+$background: radial-gradient(#424f5a, #697a85);
 
 // Primary/body text
 $mainFont: 'Open Sans', sans-serif;
@@ -35,7 +36,7 @@ $mainColor: $pastelPurple;
 
 // Headings
 $headingFont: 'Open Sans', sans-serif;
-$headingColor: #fff;
+$headingColor: $white;
 $headingLetterSpacing: 0;
 $headingTextTransform: none;
 
@@ -59,9 +60,9 @@ body {
 }
 
 .reveal {
-	font-weight: 100;
-	letter-spacing: -0.02em;
 	color: $mainColor;
+	font-weight: 300;
+	letter-spacing: -0.02em;
 
 	::selection {
 		color: $selectionColor;
@@ -73,12 +74,21 @@ body {
 		font-style: italic;
 	}
 
-	.secondary-font {
+	.emphasize {
+		color: $white;
+		font-weight: 400;
+	}
+
+	.secondary {
 		color: darken($pastelRed, 15%);
 	}
 
-	.tertiary-font {
+	.tertiary {
 		color: darken($pastelOrange, 15%);
+	}
+
+	.icon {
+		font-size: 60px;
 	}
 }
 
