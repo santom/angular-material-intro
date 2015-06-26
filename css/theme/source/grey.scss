@@ -70,6 +70,12 @@ body {
 		text-shadow: none;
 	}
 
+	.tinted {
+		background: rgba(0, 0, 0, 0.4);
+		min-width: 100%;
+		min-height: 100%;
+	}
+
 	.italicise {
 		font-style: italic;
 	}
@@ -79,16 +85,28 @@ body {
 		font-weight: 400;
 	}
 
-	.secondary {
+	.red {
 		color: darken($pastelRed, 15%);
 	}
 
-	.tertiary {
+	.orange {
 		color: darken($pastelOrange, 15%);
 	}
 
+	.yellow {
+		color: darken($pastelYellow, 15%);
+	}
+
+	.green {
+		color: darken($pastelGreen, 15%);
+	}
+
+	.purple {
+		color: darken($pastelPurple, 15%);
+	}
+
 	.icon {
-		font-size: 60px;
+		font-size: 40px;
 	}
 }
 

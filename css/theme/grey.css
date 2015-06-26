@@ -276,17 +276,27 @@ body {
     color: #fff;
     background: #134674;
     text-shadow: none; }
+  .reveal .tinted {
+    background: rgba(0, 0, 0, 0.4);
+    min-width: 100%;
+    min-height: 100%; }
   .reveal .italicise {
     font-style: italic; }
   .reveal .emphasize {
     color: #ffffff;
     font-weight: 400; }
-  .reveal .secondary {
+  .reveal .red {
     color: #ff9e9e; }
-  .reveal .tertiary {
+  .reveal .orange {
     color: #ffd79e; }
+  .reveal .yellow {
+    color: #fffd9e; }
+  .reveal .green {
+    color: #a5ff9e; }
+  .reveal .purple {
+    color: #9eaaff; }
   .reveal .icon {
-    font-size: 60px; }
+    font-size: 40px; }
 
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   color: #ffffff;
