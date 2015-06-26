@@ -1,8 +1,8 @@
 {
-  "name": "reveal.js",
-  "version": "3.1.0",
-  "description": "The HTML Presentation Framework",
-  "homepage": "http://lab.hakim.se/reveal-js",
+  "name": "angular-material-intro",
+  "version": "1.0",
+  "description": "An introduction to angular and angular-material",
+  "homepage": "http://xevenheaven.github.io/angular-material-intro/",
   "subdomain": "revealjs",
   "main": "js/reveal.js",
   "scripts": {
@@ -10,13 +10,12 @@
     "start": "grunt serve"
   },
   "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "http://hakim.se"
+    "name": "Elysia Ong",
+    "email": "elysia.owx@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": "git://github.com/xevenheaven/angular-material-intro.git"
   },
   "engines": {
     "node": "~0.10.0"
@@ -40,6 +39,6 @@
     "grunt": "~0.4.0",
     "node-sass": "~0.9.3"
   },
-  
+
   "license": "MIT"
 }
