@@ -336,7 +336,8 @@ body {
   margin-top: 10px;
   background: transparent;
   border: 0;
-  box-shadow: none; }
+  box-shadow: none;
+  width: 70%; }
 
 /*********************************************
  * LINKS
