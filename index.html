@@ -43,40 +43,92 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section data-transition="convex">
+				<section>
 					<h2>angular<span class="red">material</span></h2>
 					<h4 class="italicise">A simple introduction</h4>
 				</section>
 
-				<section data-transition="convex">
-					<section data-transition="convex">
+				<section>
+					<section>
 						<h2><span class="orange">angular</span>js</h2>
 						<p class="fragment fade-out" data-fragment-index="1">
-							Angular.js is a toolset for building the framework for your applications. It extends HTML with <span class="emphasize">new attributes</span> and is perfect for Single Page Applications.
+							HTML is good for declaring static documents, but it falters when declaring dynamic views. Angular.js extends HTML with <span class="emphasize">new attributes</span> and is perfect for Single Page Applications.
 						</p>
 						<p class="fragment fade-in" data-fragment-index="1">
-							And it's pretty easy to learn.<br>
+							And the basics are pretty easy to learn.<br>
 							<span class="icon">✌</span>
 						</p>
 					</section>
-					<section data-transition="convex">
+				</section>
+				<section>
+					<section>
 						<h2><span class="orange">material</span>design</h2>
 						<p class="fragment fade-out" data-fragment-index="1">
 							A design language developed by Google, material design is a guide for visual, motion, and interaction design across platforms and devices.
 						</p>
 						<p class="fragment fade-in" data-fragment-index="1">
-							That basically means more <span class="yellow">responsive</span> (and prettier) elements, and many <span class="yellow">cool animations</span> and effects.
+							That basically means more <span class="emphasize">responsive</span> (and prettier) elements, and many <span class="emphasize">cool animations</span> and effects.
 						</p>
 					</section>
-					<section data-transition="convex">
+					<section>
+						<p>Google Inbox</p>
+						<img data-src="images/google-inbox.png">
+					</section>
+					<section>
+						<p>QuickPic</p>
+						<img data-src="images/quickpic.png">
+					</section>
+					<section>
+						<p>WhatsApp</p>
+						<img data-src="images/whatsapp.jpg">
+					</section>
+					<section>
+						<h3>Material is the metaphor</h3>
+						<aside class="notes">
+							Material Design is actually inspired by the study of paper and ink. This is why it is nicknamed as Quantum Paper or Smart Paper. It's like how physical objects have physical properties, Material Design is defining the space and motion of the software. And the shadow, depth, edges and layers you see in Material Design give visual cues about the material.
+						</aside>
+					</section>
+					<section>
+						<h3>Bold, graphic, intentional</h3>
+						<aside class="notes">
+							Since everything is visual, there is the need of efficient typography, spacing, grids, colours and even images. But these are not just for visual appeal; they create hierarchy, meaning and focus.
+						</aside>
+					</section>
+					<section>
+						<h3>Motion provides meaning</h3>
+						<aside class="notes">
+							Users' actions initiate motion and motion transforms the whole design by focusing the user's attention. It also gives subtle yet clear feedback.
+						</aside>
+					</section>
+				</section>
+				<section>
+					<section>
 						<h2><span class="orange">angular</span>material</h2>
 						<p>Put one and two together...</p>
 					</section>
 					<section data-background="images/minion-clap.gif">
 						<p>And you get...</p>
-						<p class="emphasize">Material design in angularjs!</p>
+						<h3 class="emphasize">Material Design in Angular.js!</h3>
 					</section>
 				</section>
+
+				<section data-background="radial-gradient(#4d7e65, #1C7347)">
+					<h2>Let's get started!</h2>
+				</section>
+
+				<section>
+					<h2>Installation</h2>
+					<p>angularjs</p>
+					<pre><code><script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script></code></pre>
+					<p>angular material</p>
+					<pre><code><link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.css"></code></pre>
+				</section>
+
+				<section>
+					<h2>Basic <span class="red">angular</span>js app</h2>
+					<a href="">LIVE demo!</a>
+				</section>
+
 			</div>
 
 		</div>
@@ -94,14 +146,34 @@
 				history: true,
 				center: true,
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
 
 				// Optional reveal.js plugins
 				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{
+						src: 'lib/js/classList.js',
+						condition: function() {
+							return !document.body.classList;
+						}
+					},
+					{
+						src: 'plugin/markdown/marked.js',
+						condition: function() {
+							return !!document.querySelector('[data-markdown]');
+						}
+					},
+					{
+						src: 'plugin/markdown/markdown.js',
+						condition: function() { return !!document.querySelector('[data-markdown]');
+						}
+					},
+					{
+						src: 'plugin/highlight/highlight.js',
+						async: true,
+						condition: function() { return !!document.querySelector('pre code');
+						},
+						callback: function() { hljs.initHighlightingOnLoad(); }
+					},
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true }
 				]
