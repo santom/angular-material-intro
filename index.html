@@ -373,22 +373,25 @@ angular.module('myApp');</code></pre>
 						<p>Local scope property</p>
 <pre><code>scope: {
     // Binds a String to the value of the DOM attribute
-    someProperty: '@'
+    myAttr: '@'
 }</code></pre>
+<pre><code><div my-directive my-attr="someString"></div></code></pre>
 					</section>
 					<section>
 						<p>Bi-directional property</p>
 <pre><code>scope: {
     // Binds the parent property with the local property
-    someProperty: '='
+    myProperty: '='
 }</code></pre>
+<pre><code><div my-directive my-property="bindedProperty"></div></code></pre>
 					</section>
 					<section>
 						<p>Parent execution binding</p>
 <pre><code>scope: {
     // To execute a function in the parent scope
-    someProperty: '&'
+    myFunc: '&'
 }</code></pre>
+<pre><code><div my-directive my-func="someFunction(msg)"></div></code></pre>
 					</section>
 				</section>
 			</div>
