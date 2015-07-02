@@ -154,16 +154,22 @@
 				<section>
 					<section>
 						<h2>Modules</h2>
-						<p>
-							Modules are the main way to define an Angular.js app. Modules keep the global namespace <span class="emphasize">clean</span> and also make it easy to <span class="emphasize">share code</span> between applications. More importantly, having modules allow the application to load different parts of the code <span class="emphasize">in any order</span>.
+						<p class="fragment fade-out" data-fragment-index="1">
+							Modules are the main way to define an Angular.js app.
+						</p>
+						<p class="fragment fade-in" data-fragment-index="1">
+							Modules keep the global namespace <span class="emphasize">clean</span> and<br>
+							also make it easy to <span class="emphasize">share code</span> between applications.<br>
+							More importantly, having modules allow the application<br>
+							to load different parts of the code <span class="emphasize">in any order</span>.
 						</p>
 					</section>
 					<section>
 						<h2>Angular module API</h2>
 						<p>
 							Two parameters are needed:<br>
-							<span class="small-icon purple">🌟</span> name of the module <span class="small-icon purple">🌟</span><br>
-							<span class="small-icon purple">🌟</span> list of dependencies (injectables) <span class="small-icon purple">🌟</span>
+							<span class="small-icon purple">🌟</span> name of module <span class="small-icon purple">🌟</span><br>
+							<span class="small-icon purple">🌟</span> list of dependencies <span class="small-icon purple">🌟</span>
 						</p>
 <pre><code>// Defining the module
 angular.module('myApp', []);</code></pre>
