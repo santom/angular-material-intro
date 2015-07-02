@@ -258,6 +258,142 @@ angular.module('myApp');</code></pre>
 						</p>
 					</section>
 				</section>
+
+				<section>
+					<section>
+						<h2>Directives</h2>
+						<p>
+							Directives are Angular's way of creating <span class="emphasize">new HTML elements</span> that have their own custom functionality.
+						</p>
+					</section>
+					<section>
+						<h2>Angular directives</h2>
+						<p>
+							Usually with prefix <span class="emphasize">ng-</span>.
+						</p>
+						<p>
+							<span class="orange">ng-app</span>:
+							Initialises an Angular application
+						</p>
+						<p>
+							<span class="orange">ng-init</span>:
+							Initialises the application data
+						</p>
+						<p>
+							<span class="orange">ng-model</span>:
+							Binds the value to application data
+						</p>
+					</section>
+					<section>
+						<p>Demo!</p>
+						<p data-height="260"
+							data-theme-id="16413"
+							data-slug-hash="bdLoZd"
+							data-default-tab="html"
+							data-user="xevenheaven"
+							class="codepen">
+						</p>
+					</section>
+					<section>
+						<h2>Creating custom directives</h2>
+						<p>
+							Angular compiles the HTML code we write and invokes it as a directive.
+						</p>
+<pre><code><my-directive></my-directive></code></pre>
+					</section>
+					<section>
+						<p>Demo!</p>
+						<p data-height="245"
+							data-theme-id="16413"
+							data-slug-hash="PqQJrY"
+							data-default-tab="html"
+							data-user="xevenheaven"
+							class="codepen">
+						</p>
+<pre class="fragment fade-in"><code><my-directive>Click <a href="http://xevenheaven.github.io/angular-material-intro" target="_blank">me</a>!</my-directive></code></pre>
+					</section>
+					<section>
+						<p>Using replace: <span class="red">true</span></p>
+						<p data-height="260"
+							data-theme-id="16413"
+							data-slug-hash="NqywWN"
+							data-default-tab="js"
+							data-user="xevenheaven"
+							class="codepen">
+						</p>
+<pre class="fragment fade-in"><code><div>Click <a href="http://xevenheaven.github.io/angular-material-intro" target="_blank">me</a>!</div></code></pre>
+					</section>
+					<section>
+						<h2>Formats</h2>
+						<p>There are four declaration formats:</p>
+						<p>Element</p>
+						<p>Attribute</p>
+						<p>Class</p>
+						<p>Comment</p>
+					</section>
+					<section>
+						<p>restrict: <span class="red">E</span></p>
+<pre><code><my-directive></my-directive></code></pre>
+					</section>
+					<section>
+						<p>restrict: <span class="red">A</span></p>
+<pre><code><div my-directive></div></code></pre>
+					</section>
+					<section>
+						<p>restrict: <span class="red">C</span></p>
+<pre><code><div class="my-directive"></div></code></pre>
+					</section>
+					<section>
+						<p>restrict: <span class="red">M</span></p>
+<pre><code><!-- directive: my-directive --></code></pre>
+					</section>
+					<section>
+						<h2>Passing data into directives</h2>
+						<p>
+							Attributes can be declared for our custom directive. These attributes are set on the inner scope of our custom directive.
+						</p>
+					</section>
+					<section>
+						<p>Demo!</p>
+						<p data-height="345"
+							data-theme-id="16413"
+							data-slug-hash="GJQOZR"
+							data-default-tab="js"
+							data-user="xevenheaven"
+							class="codepen">
+						</p>
+					</section>
+					<section>
+						<h2>Binding strategies</h2>
+						<p>
+							Angular gives three ways to bind data from outside the directive scope to the isolate scope inside the directive.
+						</p>
+					</section>
+					<section>
+						<p>Local scope property</p>
+<pre><code>scope: {
+    // Binds a String to the value of the DOM attribute
+    myAttr: '@'
+}</code></pre>
+<pre><code><div my-directive my-attr="someString"></div></code></pre>
+					</section>
+					<section>
+						<p>Bi-directional property</p>
+<pre><code>scope: {
+    // Binds the parent property with the local property
+    myProperty: '='
+}</code></pre>
+<pre><code><div my-directive my-property="bindedProperty"></div></code></pre>
+					</section>
+					<section>
+						<p>Parent execution binding</p>
+<pre><code>scope: {
+    // To execute a function in the parent scope
+    myFunc: '&'
+}</code></pre>
+<pre><code><div my-directive my-func="someFunction(msg)"></div></code></pre>
+					</section>
+				</section>
 			</div>
 		</div>
 
