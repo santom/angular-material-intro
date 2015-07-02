@@ -20,6 +20,7 @@
 // ---------------------------------------------
 
 // Color palette
+$black: #000000;
 $white: #ffffff;
 $pastelRed: #ffebeb;
 $pastelOrange: #fff7eb;
@@ -114,13 +115,12 @@ body {
 		color: darken($pastelPurple, 15%);
 	}
 
-	.icon {
-		font-size: 40px;
+	.shadow {
+		text-shadow: 1px 1px 5px $black;
 	}
 
-	.small-icon {
-		font-size: 15px;
-		vertical-align: middle;
+	.icon {
+		font-size: 40px;
 	}
 }
 
