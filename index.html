@@ -181,6 +181,59 @@ angular.module('myApp');</code></pre>
 					</section>
 				</section>
 
+				<section>
+					<section>
+						<h2>Scopes</h2>
+						<p>
+							Scopes are a core fundamental of any Angular app and are used all over the framework.
+						</p>
+					</section>
+					<section>
+						<h2>Definition</h2>
+						<p>Business functionality of the application</p>
+						<p>Methods in controllers</p>
+						<p>Properties in views</p>
+						<aside class="notes">
+							Scopes of the application refer to the application model and are the execution context for expressions.
+						</aside>
+					</section>
+					<section>
+						<h2>Glue</h2>
+						<p>between the controller and view</p>
+						<aside class="notes">
+							Before the view gets rendered, the view template links to the scope. The app sets up the DOM to notify Angular for property changes.
+						</aside>
+					</section>
+					<section>
+						<h2>Source of truth</h2>
+						<p>for application state</h2>
+						<aside class="notes">
+							Because of the dynamic data binding, we can rely on the scope to update immediately when the view modifies it. And we can also rely on the view to update when the scope changes.
+						</aside>
+					</section>
+					<section>
+						<p>
+							All properties found on the <span class="emphasize">$scope</span> object is automatically accessible to the view
+						</p>
+						<p data-height="245"
+							data-theme-id="16413"
+							data-slug-hash="mJXMzp"
+							data-default-tab="result"
+							data-user="xevenheaven"
+							class="codepen">
+						</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Controllers</h2>
+						<p>
+
+						</p>
+					</section>
+				</section>
+
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
