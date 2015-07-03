@@ -40,14 +40,16 @@
 
 	<body>
 		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+
+				<!-- Cover slide -->
 				<section>
 					<h2>angular<span class="red">material</span></h2>
 					<h4 class="italicise">A simple introduction</h4>
 				</section>
+				<!-- End: Cover slide -->
 
+				<!-- Angularjs -->
 				<section>
 					<h2><span class="orange">angular</span>js</h2>
 					<p class="fragment fade-out" data-fragment-index="1">
@@ -58,7 +60,9 @@
 						<span class="icon">✌</span>
 					</p>
 				</section>
+				<!-- End: Angularjs -->
 
+				<!-- Material design -->
 				<section>
 					<section>
 						<h2><span class="orange">material</span>design</h2>
@@ -100,7 +104,9 @@
 						</aside>
 					</section>
 				</section>
+				<!-- End: Material design -->
 
+				<!-- Angular material -->
 				<section>
 					<section>
 						<h2><span class="orange">angular</span>material</h2>
@@ -111,11 +117,15 @@
 						<h3 class="emphasize shadow">Material Design in Angular.js!</h3>
 					</section>
 				</section>
+				<!-- End: Angular material -->
 
+				<!-- Filler -->
 				<section data-background="radial-gradient(#4d7e65, #1C7347)">
 					<h2>Let's get started!</h2>
 				</section>
+				<!-- End: Filler -->
 
+				<!-- Installation -->
 				<section>
 					<h2>Installation</h2>
 					<p>angularjs</p>
@@ -123,7 +133,9 @@
 					<p>angular material</p>
 <pre><code><link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.css"></code></pre>
 				</section>
+				<!-- End: Installation -->
 
+				<!-- Data binding -->
 				<section>
 					<section>
 						<h2>Data binding</h2>
@@ -147,7 +159,9 @@
 						</p>
 					</section>
 				</section>
+				<!-- End: Data binding -->
 
+				<!-- Angular modules -->
 				<section>
 					<section>
 						<h2>Modules</h2>
@@ -162,7 +176,7 @@
 						</p>
 					</section>
 					<section>
-						<h2>Angular module API</h2>
+						<h2>angular.<span class="red">module</span>()</h2>
 						<p>Two parameters are needed:</p>
 						<p>
 							<span class="orange">{String}</span>
@@ -178,7 +192,9 @@ angular.module('myApp', []);</code></pre>
 angular.module('myApp');</code></pre>
 					</section>
 				</section>
+				<!-- End: Angular modules -->
 
+				<!-- Angular scopes -->
 				<section>
 					<section>
 						<h2>Scopes</h2>
@@ -222,7 +238,9 @@ angular.module('myApp');</code></pre>
 						</p>
 					</section>
 				</section>
+				<!-- End: Angular scopes -->
 
+				<!-- Angular controllers -->
 				<section>
 					<section>
 						<h2>Controllers</h2>
@@ -258,7 +276,9 @@ angular.module('myApp');</code></pre>
 						</p>
 					</section>
 				</section>
+				<!-- End: Angular controllers -->
 
+				<!-- Angular directives -->
 				<section>
 					<section>
 						<h2>Directives</h2>
@@ -394,6 +414,53 @@ angular.module('myApp');</code></pre>
 <pre><code><div my-directive my-func="someFunction(msg)"></div></code></pre>
 					</section>
 				</section>
+				<!-- End: Angular directives -->
+
+				<!-- Simple todo app -->
+				<section>
+					<section>
+						<h2>Simple angular<span class="red">js</span> app</h2>
+						<p>
+							This simple ToDoList app illustrates the basic usage of a controller and directive.
+						</p>
+					</section>
+					<section>
+						<p>Demo!</p>
+						<p data-height="400"
+							data-theme-id="16413"
+							data-slug-hash="XbVbgz"
+							data-default-tab="result"
+							data-user="xevenheaven"
+							class="codepen">
+						</p>
+					</section>
+					<section>
+						<p>Angular directives used:</p>
+						<p>
+							<span class="orange">ng-app</span> | <span class="orange">ng-controller</span> | <span class="orange">ng-if</span> | <span class="orange">ng-model</span> |
+						</p>
+						<p>
+							<span class="orange">ng-click</span> | <span class="orange">ng-repeat</span> | <span class="orange">ng-show</span>
+						</p>
+					</section>
+					<section>
+						<h3>
+							Controller created: <span class="orange">toDoListController</span>
+						</h3>
+						<p>
+							This controller initialises the ToDoList with three items and creates some functions to get the relevant information.
+						</p>
+					</section>
+					<section>
+						<h3>
+							Directive created: <span class="orange">toDoListItem</span>
+						</h3>
+						<p>
+							This directive is the view for each item in the ToDoList, which includes a checkbox and the ToDo description.
+						</p>
+					</section>
+				</section>
+				<!-- End: Simple todo app -->
 			</div>
 		</div>
 
